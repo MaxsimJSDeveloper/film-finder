@@ -28,7 +28,6 @@ export default function MovieReviews() {
         setReviewsList(data.results);
       } catch (error) {
         notify();
-        console.log(error);
       }
     };
     getMovieReviews(movieId);

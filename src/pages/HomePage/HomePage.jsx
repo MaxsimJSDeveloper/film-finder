@@ -29,10 +29,10 @@ export default function HomePage() {
       try {
         const data = await fetchTrendMovies();
         setTrendMovies(data.results);
-        setLoading(false);
       } catch (error) {
         notify();
-        console.log(error);
+      } finally {
+        setLoading(false);
       }
     }
 

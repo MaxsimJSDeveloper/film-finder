@@ -11,7 +11,8 @@
 .item {
   color: black;
 }
+
 .item:hover,
 .item:focus {
-  color: rgb(184, 92, 7);
+  color: #9b5615;
 }

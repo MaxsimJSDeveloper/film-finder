@@ -31,7 +31,6 @@ export default function MovieDetailsPage() {
         setMovieDetails(data);
       } catch (error) {
         notify();
-        console.log(error);
       }
     };
     getMovieDetails();

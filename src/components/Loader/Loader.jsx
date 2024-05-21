@@ -5,10 +5,10 @@ const Loader = ({ loading }) => {
   return (
     <div className={css.loader}>
       <PropagateLoader
-        color="#b85c07"
+        color="#b96c09"
         cssOverride={null}
         loading={loading}
-        size={15}
+        size={25}
         speedMultiplier={0.7}
       />
     </div>

@@ -46,11 +46,11 @@ export default function MoviesPage() {
           }
           setError(false);
           setMoviesList(data.results);
-          setLoading(false);
         });
       } catch (error) {
-        notify("Something went wrong. Please, try again!");
-        console.log(error);
+        notify("Error, try again!");
+      } finally {
+        setLoading(false);
       }
     };
     getMovieByKeyword(movieName);

@@ -27,7 +27,6 @@ export default function MovieCast() {
         setCastList(data.cast);
       } catch (error) {
         notify();
-        console.log(error);
       }
     };
     getMovieCast(movieId);
@@ -52,7 +51,7 @@ export default function MovieCast() {
               <p className={css.character}> Character: {character}</p>
             </li>
           ))
-        : "Sorry, there isn't any info :("}
+        : "Sorry, there isn't any info"}
     </ul>
   );
 }

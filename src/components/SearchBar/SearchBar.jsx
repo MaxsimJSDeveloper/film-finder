@@ -6,7 +6,7 @@ export default function SearchBar({ onSubmit }) {
       <input
         type="text"
         name="movieName"
-        placeholder="Enter the title to search"
+        placeholder="Enter movie name"
         autoComplete="off"
         autoFocus
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
