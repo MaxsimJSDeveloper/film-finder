@@ -62,10 +62,10 @@
 
 .infoItem:hover,
 .infoItem:focus {
-  border-color: rgb(184, 92, 7);
+  border-color: #13a264;
 }
 
 .infoItem:hover > .infoLink,
 .infoItem:focus > .infoLink {
-  color: #b85c07;
+  color: #13a264;
 }

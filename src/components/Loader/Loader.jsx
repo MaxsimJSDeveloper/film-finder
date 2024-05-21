@@ -5,7 +5,7 @@ const Loader = ({ loading }) => {
   return (
     <div className={css.loader}>
       <PropagateLoader
-        color="#b96c09"
+        color="#13a264"
         cssOverride={null}
         loading={loading}
         size={25}
