@@ -1,0 +1,16 @@
+.moviesPage {
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+
+.movieList {
+  list-style: inside;
+}
+
+.item {
+  color: black;
+}
+.item:hover,
+.item:focus {
+  color: rgb(184, 92, 7);
+}
