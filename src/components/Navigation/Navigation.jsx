@@ -7,10 +7,21 @@ export default function Navigation() {
   return (
     <header className="container">
       <nav className={css.nav}>
-        <NavLink to="/" end className={css.navLink} activeClassName="active">
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) =>
+            isActive ? `${css.navLink} active` : css.navLink
+          }
+        >
           Home
         </NavLink>
-        <NavLink to="/movies" className={css.navLink} activeClassName="active">
+        <NavLink
+          to="/movies"
+          className={({ isActive }) =>
+            isActive ? `${css.navLink} active` : css.navLink
+          }
+        >
           Movies
         </NavLink>
         <Suspense fallback={<Loader />}>

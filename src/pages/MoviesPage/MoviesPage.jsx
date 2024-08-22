@@ -40,9 +40,8 @@ export default function MoviesPage() {
           if (!data.results.length) {
             setLoading(false);
             setError(true);
-            return console.log(
-              "There is no movies with this request. Please, try again"
-            );
+            notify("There is no movies with this request. Please, try again");
+            return;
           }
           setError(false);
           setMoviesList(data.results);
@@ -80,6 +79,16 @@ export default function MoviesPage() {
                   className={css.item}
                 >
                   {movie.original_title || movie.name}
+                  <img
+                    src={
+                      movie.poster_path
+                        ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
+                        : `http://www.suryalaya.org/images/no_image.jpg`
+                    }
+                    loading="lazy"
+                    alt="Movie poster"
+                    className={css.img}
+                  />
                 </Link>
               </li>
             );

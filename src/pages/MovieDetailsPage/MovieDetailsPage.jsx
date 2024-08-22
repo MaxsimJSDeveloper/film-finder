@@ -21,6 +21,7 @@ const notify = () =>
 
 export default function MovieDetailsPage() {
   const [movieDetails, setMovieDetails] = useState({});
+
   const location = useLocation();
   const { movieId } = useParams();
 
@@ -84,7 +85,6 @@ export default function MovieDetailsPage() {
               </Link>
             </li>
             <li className={css.infoItem}>
-              {" "}
               <Link
                 to="reviews"
                 state={{ ...location.state }}
