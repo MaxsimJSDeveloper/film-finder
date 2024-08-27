@@ -8,7 +8,7 @@ export default function NotFoundPage() {
         alignItems: "center",
       }}
     >
-      <p>Sorry, we could not find that page</p>
+      <p>Page not found</p>
       <a href="/">Go to Home</a>
     </main>
   );
